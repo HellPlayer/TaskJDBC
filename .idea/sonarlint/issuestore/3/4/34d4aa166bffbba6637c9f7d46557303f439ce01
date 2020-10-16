@@ -1,11 +1,14 @@
 
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ÏĞÜÕ8ì¸·Ò.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÅøÃ„ÿÿÿÿÿ8ì¸·Ò.
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(¥ÆÖ¤ıÿÿÿÿ8ì¸·Ò.
-x
-java:S1192"VDefine a constant instead of duplicating this literal "User Ñ Ğ¸Ğ¼ĞµĞ½ĞµĞ¼ " 4 times.(á“—çıÿÿÿÿ8ì¸·Ò.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¦œ˜Ãÿÿÿÿÿ8ì¸·Ò.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(á“—çıÿÿÿÿ8ì¸·Ò.
-
-java:S1192"kDefine a constant instead of duplicating this literal " Ğ´Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½ Ğ² Ğ±Ğ°Ğ·Ñƒ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ…" 4 times.(á“—çıÿÿÿÿ8ì¸·Ò.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(€¢òèøÿÿÿÿ8ì¸·Ò.
+X	java:S125"<This block of commented-out lines of code should be removed.(‹óŸó8‚à¾çÒ.
+]	java:S125"<This block of commented-out lines of code should be removed.(ú¾ù¡ûÿÿÿÿ8‚à¾çÒ.
+]	java:S125"<This block of commented-out lines of code should be removed.(¥ÒØ¢øÿÿÿÿ8Û†óêÒ.
+a
+java:S1854"?Remove this useless assignment to local variable "userService".(–š…µùÿÿÿÿ8’óõêÒ.
+]	java:S125%"<This block of commented-out lines of code should be removed.(–…Ò´úÿÿÿÿ8‚à¾çÒ.
+]	java:S125"<This block of commented-out lines of code should be removed.(˜ú¼Äûÿÿÿÿ8º¿îéÒ.
+W	java:S125("<This block of commented-out lines of code should be removed.(£Öã8‚à¾çÒ.
+X	java:S125"<This block of commented-out lines of code should be removed.(Ÿ¼®É8á€“èÒ.
+R
+java:S1481"0Remove this unused "userService" local variable.(–š…µùÿÿÿÿ8’óõêÒ.
+]	java:S125!"<This block of commented-out lines of code should be removed.(âñ¹Íşÿÿÿÿ8‚à¾çÒ.
+X	java:S125*"<This block of commented-out lines of code should be removed.(íÀÓû8‚à¾çÒ.

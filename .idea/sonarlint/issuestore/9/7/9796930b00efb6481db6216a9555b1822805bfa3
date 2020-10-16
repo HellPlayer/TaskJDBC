@@ -1,0 +1,14 @@
+
+e
+java:S3252$"HUse static access with "org.hibernate.cfg.AvailableSettings" for "PASS".(‰Ï‹Æ8‘…ÙåÒ.
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(ãàÛ¸8‘…ÙåÒ.
+i
+java:S3252""GUse static access with "org.hibernate.cfg.AvailableSettings" for "URL".(¼¿ÿÿÿÿÿ8‘…ÙåÒ.
+l
+java:S3252 "JUse static access with "org.hibernate.cfg.AvailableSettings" for "DRIVER".(ñõÍÅÿÿÿÿÿ8‘…ÙåÒ.
+ˆ
+java:S1450"fRemove the "standardServiceRegistry" field and declare it as a local variable in the relevant methods.(“ØÑşøÿÿÿÿ8‘…ÙåÒ.
+j
+java:S3252#"HUse static access with "org.hibernate.cfg.AvailableSettings" for "USER".(ã­¹üøÿÿÿÿ8‘…ÙåÒ.
+h
+java:S3252!"KUse static access with "org.hibernate.cfg.AvailableSettings" for "DIALECT".(Å¡‚¬8‘…ÙåÒ.
