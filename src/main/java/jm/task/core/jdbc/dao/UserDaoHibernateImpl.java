@@ -56,40 +56,52 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
-        Session session = Util.getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
+        try {
+            Session session = Util.getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
 
-        User user = new User(name, lastName, age);
+            User user = new User(name, lastName, age);
 
-        session.save(user);
+            session.save(user);
 
-        transaction.commit();
-        session.close();
+            transaction.commit();
+            session.close();
+        } catch (Exception e) {
+            throw new IllegalStateException(e.getMessage());
+        }
     }
 
     @Override
     public void removeUserById(long id) {
-        Session session = Util.getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
-        Object user = session.get(User.class, id);
-        if (user != null) {
-            session.delete(user);
+        try {
+            Session session = Util.getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
+            Object user = session.get(User.class, id);
+            if (user != null) {
+                session.delete(user);
+            }
+            transaction.commit();
+            session.close();
+        } catch (Exception e) {
+            throw new IllegalStateException(e.getMessage());
         }
-        transaction.commit();
-        session.close();
     }
 
     @Override
     public List<User> getAllUsers() {
-        Session session = Util.getSessionFactory().openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        Class<User> userClass = User.class;
-        CriteriaQuery<User> query = builder.createQuery(userClass);
-        Root<User> root = query.from(userClass);
-        query.select(root);
-        Query<User> q = session.createQuery(query);
-        List<User> list = q.getResultList();
-        return list;
+        try {
+            Session session = Util.getSessionFactory().openSession();
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            Class<User> userClass = User.class;
+            CriteriaQuery<User> query = builder.createQuery(userClass);
+            Root<User> root = query.from(userClass);
+            query.select(root);
+            Query<User> q = session.createQuery(query);
+            List<User> list = q.getResultList();
+            return list;
+        } catch (Exception e) {
+            throw new IllegalStateException(e.getMessage());
+        }
     }
 
     @Override
